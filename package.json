@@ -1,0 +1,13 @@
+{
+  "title": "Twitch Chat",
+  "name": "twitch-provider",
+  "version": "0.0.1",
+  "description": "Provides a twitch network type for instantbird",
+  "main": "index.js",
+  "author": "Martin Giger (http://humanoids.be)",
+  "engines": {
+    "{33cb9019-c295-46dd-be21-8c4936574bee}": ">=1.6a1pre"
+  },
+  "license": "MIT",
+  "dependencies": {}
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+    <Description about="urn:mozilla:install-manifest">
+          <em:id>@twitch-provider</em:id>
+          <em:type>2</em:type>
+          <em:bootstrap>true</em:bootstrap>
+          <em:unpack>false</em:unpack>
+          <em:version>0.0.1</em:version>
+          <em:name>Twitch Chat</em:name>
+          <em:description>Provides a twitch network type for instantbird</em:description>
+          <em:creator>Martin Giger (http://humanoids.be)</em:creator>
+
+          <em:targetApplication>
+            <Description>
+              <em:id>{33cb9019-c295-46dd-be21-8c4936574bee}</em:id>
+              <em:minVersion>1.6a1pre</em:minVersion>
+              <em:maxVersion>39.0</em:maxVersion>
+</Description>
+</em:targetApplication>
+
+
+    </Description>
+
+</RDF>
