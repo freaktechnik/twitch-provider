@@ -9,6 +9,8 @@
           <em:name>Twitch Chat</em:name>
           <em:description>Provides a twitch network type for instantbird</em:description>
           <em:creator>Martin Giger (http://humanoids.be)</em:creator>
+          <em:optionsURL>data:text/xml,&lt;placeholder/&gt;</em:optionsURL>
+          <em:optionsType>2</em:optionsType>
 
           <em:targetApplication>
             <Description>
