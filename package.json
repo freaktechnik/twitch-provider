@@ -6,6 +6,13 @@
       "title": "Twitch API Application Client ID",
       "value": "",
       "hidden": true
+    },
+    {
+      "name": "topic_refresh_interval",
+      "type": "integer",
+      "title": "Stream title refresh interval",
+      "description": "Amount of seconds to wait to refresh the channel topic.",
+      "value": 120
     }
   ],
   "title": "Twitch Chat",
