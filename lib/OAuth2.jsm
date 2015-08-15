@@ -13,7 +13,7 @@ const {classes: Cc, interfaces: Ci, results: Cr, utils: Cu} = Components;
 Cu.import("resource://gre/modules/Http.jsm");
 Cu.import("resource://gre/modules/Services.jsm");
 Cu.import("resource://gre/modules/XPCOMUtils.jsm");
-Cu.import("resource:///modules/gloda/log4moz.js");
+Cu.import("resource:///modules/imXPCOMUtils.js");
 
 function parseURLData(aData) {
   let result = {};
@@ -35,7 +35,7 @@ function OAuth2(aBaseURI, aScope, aAppKey, aAppSecret) {
     this.scope = aScope;
     this.extraAuthParams = [];
 
-    this.log = Log4Moz.getConfiguredLogger("TBOAuth");
+    this.log = initLogModule("TwitchOAuth");
 }
 
 OAuth2.CODE_AUTHORIZATION = "authorization_code";
