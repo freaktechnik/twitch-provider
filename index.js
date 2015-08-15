@@ -1,4 +1,7 @@
 const { Factory } = require("sdk/platform/xpcom");
+const { uuid } = require("sdk/util/uuid");
+
+//TODO test if uuid removes some of the reregistration trouble
 
 const { CategoryEntry } = require("lib/category-manager");
 const { TwitchProtocol } = require("lib/twitch");
@@ -10,7 +13,8 @@ let protoInst = new TwitchProtocol();
 
 const factory = Factory({
     contract: protoInst.contractID,
-    Component: TwitchProtocol
+    Component: TwitchProtocol,
+    id: uuid("{b6ab1814-4333-11e5-b78d-40167e9a3b91}")
 });
 
 CategoryEntry({
