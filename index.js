@@ -1,8 +1,8 @@
-
 const { Factory } = require("sdk/platform/xpcom");
 
 const { CategoryEntry } = require("lib/category-manager");
 const { TwitchProtocol } = require("lib/twitch");
+
 
 const PROTOCOL_CATEGORY = "im-protocol-plugin";
 
