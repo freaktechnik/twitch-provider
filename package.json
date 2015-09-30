@@ -15,7 +15,7 @@
       "value": 120
     }
   ],
-  "title": "Twitch Chat",
+  "title": "Twitch Chat Provider",
   "name": "twitch-provider",
   "version": "0.0.1",
   "description": "Provides a twitch network type for instantbird",
