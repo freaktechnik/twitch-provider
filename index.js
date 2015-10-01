@@ -20,12 +20,6 @@ const factory = Factory({
 CategoryEntry({
     category: PROTOCOL_CATEGORY,
     entry: protoInst.id,
-    value: factory.contract
+    value: protoInst.contractID
 });
-
-
-const { Cm, Ci } = require("chrome");
-
-console.log(Cm.QueryInterface(Ci.nsIComponentRegistrar).contractIDToCID(protoInst.contractID).number);
-console.log(factory.id.number);
 
