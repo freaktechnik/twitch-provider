@@ -13,8 +13,7 @@ let protoInst = new TwitchProtocol();
 
 const factory = Factory({
     contract: protoInst.contractID,
-    Component: TwitchProtocol,
-    id: uuid("{b6ab1814-4333-11e5-b78d-40167e9a3b91}")
+    Component: TwitchProtocol
 });
 
 CategoryEntry({
