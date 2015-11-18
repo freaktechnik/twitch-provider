@@ -13,6 +13,18 @@
       "title": "Stream title refresh interval",
       "description": "Amount of seconds to wait to refresh the channel topic.",
       "value": 120
+    },
+    {
+      "name": "bttv_emotes_enabled",
+      "type": "bool",
+      "title": "Enable BetterTTV Emotes",
+      "value": false
+    },
+    {
+      "name": "frankerfacez_emotes_enabled",
+      "type": "bool",
+      "title": "Enable FrankerFaceZ Emotes",
+      "value": false
     }
   ],
   "title": "Twitch Chat Provider",
