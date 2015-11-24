@@ -8,12 +8,12 @@ const handlers = require("lib/twitch/handlers");
 
 const PROTOCOL_CATEGORY = "im-protocol-plugin";
 
-let protoInst = new TwitchProtocol();
-
 if(self.loadReason == "upgrade" || self.loadReason == "downgrade") {
     //TODO delete category entry?
     handlers.cleanUp();
 }
+
+let protoInst = new TwitchProtocol();
 
 const factory = Factory({
     contract: protoInst.contractID,
