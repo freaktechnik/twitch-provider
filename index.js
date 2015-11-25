@@ -1,19 +1,24 @@
 const { Factory } = require("sdk/platform/xpcom");
-const { uuid } = require("sdk/util/uuid");
 const self = require("sdk/self");
+const { Services: { obs } } = require("resource:///modules/imServices.jsm");
+const { CC } = require("chrome");
 
 const { CategoryEntry } = require("lib/category-manager");
 const { TwitchProtocol } = require("lib/twitch");
-const handlers = require("lib/twitch/handlers");
+const { nsSupportsCString } = require("lib/supports-cstring");
 
 const PROTOCOL_CATEGORY = "im-protocol-plugin";
 
-if(self.loadReason == "upgrade" || self.loadReason == "downgrade") {
-    //TODO delete category entry?
-    handlers.cleanUp();
-}
-
 let protoInst = new TwitchProtocol();
+
+if(self.loadReason == "upgrade" || self.loadReason == "downgrade") {
+    // Purge the protocol from the cache in the im core
+    obs.notifyObservers(
+        nsSupportsCString(protoInst.id),
+        "xpcom-category-entry-removed",
+        PROTOCOL_CATEGORY
+    );
+}
 
 const factory = Factory({
     contract: protoInst.contractID,
