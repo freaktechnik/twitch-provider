@@ -37,5 +37,8 @@
     "fennec": ">=1.6a1pre"
   },
   "license": "MIT",
-  "dependencies": {}
+  "dependencies": {
+    "jetpack-twitchbots": "0.0.1"
+  },
+  "private": true
 }

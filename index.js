@@ -7,21 +7,20 @@ const { nsSupportsCString } = require("lib/supports-cstring");
 
 const PROTOCOL_CATEGORY = "im-protocol-plugin";
 
-let protoInst = new TwitchProtocol();
 
 if(self.loadReason == "upgrade" || self.loadReason == "downgrade") {
     // Purge the protocol from the cache in the im core
-    deleteEntry(PROTOCOL_CATEGORY, protoInst.id);
+    deleteEntry(PROTOCOL_CATEGORY, TwitchProtocol.prototype.id);
 }
 
 const factory = Factory({
-    contract: protoInst.contractID,
+    contract: TwitchProtocol.prototype.contractID,
     Component: TwitchProtocol
 });
 
 CategoryEntry({
     category: PROTOCOL_CATEGORY,
-    entry: protoInst.id,
-    value: protoInst.contractID
+    entry: TwitchProtocol.prototype.id,
+    value: TwitchProtocol.prototype.contractID
 });
 
