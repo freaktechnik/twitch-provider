@@ -15,6 +15,20 @@
       "value": 120
     },
     {
+      "name": "user_timeout",
+      "type": "integer",
+      "title": "User part grace time",
+      "description": "Amount of seconds to wait to remove a user after he last said something whenever a channel is over full (over 1000 participants)",
+      "value": 65
+    },
+    {
+      "name": "participants_refresh_interval",
+      "type": "integer",
+      "title": "Participant list refresh interval",
+      "description": "Amount of seconds to wait to refresh the participants if the channel is over full (over 1000 participants)",
+      "value": 60
+    },
+    {
       "name": "bttv_emotes_enabled",
       "type": "bool",
       "title": "Enable BetterTTV Emotes",
