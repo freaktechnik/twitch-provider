@@ -32,6 +32,18 @@
       "type": "bool",
       "title": "Enable FrankerFaceZ Emotes",
       "value": false
+    },
+    {
+      "name": "ignored_messages",
+      "type": "string",
+      "title": "Hide chat messages",
+      "descriptions": "You can enter multiple messages to be ignored by separating them with a comma"
+    },
+    {
+      "name": "ignore_bots",
+      "type": "bool",
+      "title": "Hide messages from bots",
+      "value": false
     }
   ],
   "title": "Twitch Chat Provider",
