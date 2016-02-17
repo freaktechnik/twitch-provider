@@ -37,7 +37,8 @@
       "name": "ignored_messages",
       "type": "string",
       "title": "Hide chat messages",
-      "descriptions": "You can enter multiple messages to be ignored by separating them with a comma"
+      "descriptions": "You can enter multiple messages to be ignored by separating them with a comma",
+      "value": ""
     },
     {
       "name": "ignore_bots",
