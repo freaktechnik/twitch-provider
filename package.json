@@ -44,6 +44,13 @@
       "type": "bool",
       "title": "Hide messages from bots",
       "value": false
+    },
+    {
+      "name": "participants_adding_batch_size",
+      "type": "integer",
+      "hidden": true,
+      "title": "Number of participants to add at once when batching up to de-jank",
+      "value": 10
     }
   ],
   "title": "Twitch Chat Provider",
