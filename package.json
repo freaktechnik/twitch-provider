@@ -52,6 +52,13 @@
       "hidden": true,
       "title": "Number of participants to add at once when batching up to de-jank",
       "value": 10
+    },
+    {
+      "name": "show_all_chatters",
+      "type": "bool",
+      "title": "Always show all chatters",
+      "description": "Always load all chatters, even when there are more than 1000 in the room. Otherwise only mods and speaking people get added.",
+      "value": true
     }
   ],
   "title": "Twitch Chat Provider",
