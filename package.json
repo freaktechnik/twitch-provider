@@ -66,9 +66,10 @@
   "version": "0.0.1",
   "description": "Provides a twitch network type for instantbird",
   "main": "index.js",
-  "author": "Martin Giger (http://humanoids.be)",
+  "author": "Martin Giger (https://humanoids.be)",
   "engines": {
-    "fennec": ">=1.6a1pre"
+    "{33cb9019-c295-46dd-be21-8c4936574bee}": ">=1.6a1pre <=46.0a1",
+    "thunderbird": ">=45.0a1 <=46.0a1"
   },
   "license": "MIT",
   "dependencies": {
