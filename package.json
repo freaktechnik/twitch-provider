@@ -68,8 +68,8 @@
   "main": "index.js",
   "author": "Martin Giger (https://humanoids.be)",
   "engines": {
-    "{33cb9019-c295-46dd-be21-8c4936574bee}": ">=1.6a1pre <=46.0a1",
-    "thunderbird": ">=45.0a1 <=46.0a1"
+    "{33cb9019-c295-46dd-be21-8c4936574bee}": ">=1.6a1pre",
+    "thunderbird": ">=45.0a1"
   },
   "license": "MIT",
   "dependencies": {
