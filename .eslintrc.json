@@ -1,0 +1,14 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 7
+    },
+    "rules": {
+        "node/no-missing-require": 0,
+        "node/no-unpublished-require": 0,
+        "node/no-unsupported-features": 0,
+        "no-console": 0,
+        "one-var": 0,
+        "new-cap": 0
+    },
+    "extends": "plugin:freaktechnik/node"
+}
