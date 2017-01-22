@@ -1,4 +1,6 @@
 # Twitch Chat Provider
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/freaktechnik/twitch-provider.svg)](https://greenkeeper.io/)
 Provides a twitch network type for Instantbird. Very much work in progress.
 
 ## Instantbird
